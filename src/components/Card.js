@@ -1,9 +1,10 @@
 import React from "react";
 
 const style = {
-  width: "500px",
-  height: "500px",
+  width: "30rem",
+  height: "30rem",
   backgroundColor: "red",
+  margin: "4rem",
 };
 
 const Card = (props) => {
