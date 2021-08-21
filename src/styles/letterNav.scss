@@ -9,8 +9,11 @@ div.navigation {
     button {
       width: 50px;
       height: 50px;
-      background-color: red;
+      background: rgba(255, 255, 255, 0.5);
+      border: rgba(255, 255, 255, 0.7) 2px solid;
+      border-radius: 20%;
       margin: 0.3rem;
+      font-size: 20pt;
     }
   }
 }

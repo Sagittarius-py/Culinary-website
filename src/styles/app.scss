@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 div.app {
-  //   background: url("../img/blurry-gradient-haikei.svg");
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   background-attachment: fixed;
+  background: url("../img/blurry-gradient-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
 }
