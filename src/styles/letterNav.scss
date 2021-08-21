@@ -1,0 +1,16 @@
+div.navigation {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  nav.AlphabetNav {
+    margin-top: 1vh;
+    display: flex;
+    flex-wrap: nowrap;
+    button {
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      margin: 0.3rem;
+    }
+  }
+}

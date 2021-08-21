@@ -4,6 +4,8 @@ import LetterNav from "./components/LetterNav";
 
 import AppProvider from "./Context/AppContext";
 
+import "./styles/app.scss";
+
 const style = {
   display: "flex",
   flexWrap: "wrap ",
@@ -14,12 +16,14 @@ const App = () => {
   // console.log(state);
 
   return (
-    <AppProvider>
-      <div style={style}>
-        <LetterNav />
-        <DishPage />
-      </div>
-    </AppProvider>
+    <div className="app">
+      <AppProvider>
+        <div style={style}>
+          <LetterNav />
+          <DishPage />
+        </div>
+      </AppProvider>
+    </div>
   );
 };
 
