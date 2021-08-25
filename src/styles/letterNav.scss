@@ -14,6 +14,11 @@ div.navigation {
       border-radius: 20%;
       margin: 0.3rem;
       font-size: 20pt;
+      transition: 0.2s;
+    }
+    button:hover {
+      border: rgba(255, 255, 255, 0.5) 2px solid;
+      background: rgba(255, 255, 255, 0.7);
     }
   }
 }

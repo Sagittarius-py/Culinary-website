@@ -3,7 +3,11 @@ import { AppContext } from "../Context/AppContext";
 import "../styles/letterNav.scss";
 
 const LetterNav = () => {
-  const { changeLetter } = useContext(AppContext);
+  const { changeLetter, letterState } = useContext(AppContext);
+
+  const style = {
+    backgroundColor: "white",
+  };
 
   const alphabet = [
     "A",
@@ -34,8 +38,21 @@ const LetterNav = () => {
     "Z",
   ];
 
+  const buttonStyle = (letter) => {
+    if (letterState === letter.toLowerCase()) {
+      return style;
+    } else {
+      return null;
+    }
+  };
+
   const buttonList = alphabet.map((letter) => (
-    <button onClick={() => changeLetter(letter.toLowerCase())}>{letter}</button>
+    <button
+      style={buttonStyle(letter, style)}
+      onClick={() => changeLetter(letter.toLowerCase())}
+    >
+      {letter}
+    </button>
   ));
 
   return (

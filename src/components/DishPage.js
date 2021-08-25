@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import Card from "./Card";
+import "../styles/dishPage.scss";
 
 import { AppContext } from "../Context/AppContext";
 
@@ -40,10 +41,16 @@ const DishPage = () => {
   const useGeneratedCards = () => {
     if (food !== null) {
       var result = Array.from(food);
-      const newObject = result.map((dish) => generateOneCard(dish));
+      const newObject = result.slice(0, 9).map((dish) => generateOneCard(dish));
       return newObject;
     } else {
-      return <div>Sorry, we have not dishes for tghis letter</div>;
+      return (
+        <div className="dishNullDiv">
+          <h1 className="dishNullH1">
+            Sorry, we have not dishes for tghis letter
+          </h1>
+        </div>
+      );
     }
   };
 
