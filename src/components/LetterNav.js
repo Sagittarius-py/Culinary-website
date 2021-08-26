@@ -50,6 +50,7 @@ const LetterNav = () => {
     <button
       style={buttonStyle(letter, style)}
       onClick={() => changeLetter(letter.toLowerCase())}
+      key={Math.random()}
     >
       {letter}
     </button>
