@@ -7,5 +7,16 @@
   backdrop-filter: blur(7.5px);
   -webkit-backdrop-filter: blur(7.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  // border: 1px solid rgba(255, 255, 255, 0.18);
+  img {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  div.dishTitle {
+    width: 120rem;
+  }
+  div.text {
+  }
 }
