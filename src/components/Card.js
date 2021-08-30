@@ -1,10 +1,30 @@
 import React from "react";
 import "../styles/card.scss";
 
-const Card = (props) => {
-  console.log(props);
+import Dish from "./Dish";
+
+const style = {
+  width: "800px",
+  height: "800px",
+  backgroundColor: "white",
+  position: "absolute",
+  zIndex: 100,
+};
+
+const dishDetail = (mealId) => {
+  console.log(mealId);
   return (
-    <div className="dishCard" id={props.dish.idMeal}>
+    <div style={style}>
+      <Dish mealId={mealId} />
+    </div>
+  );
+};
+
+const Card = (props) => {
+  console.log(props.dish);
+
+  return (
+    <div className="dishCard" onClick={() => dishDetail(props.dish.idMeal)}>
       <img src={props.dish.strMealThumb} alt={props.dish.strMealThumb} />
 
       <div className="dishTitle">
