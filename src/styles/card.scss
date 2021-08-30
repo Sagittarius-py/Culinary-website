@@ -16,7 +16,22 @@
   }
   div.dishTitle {
     width: 120rem;
+    padding: 0 10px 0 10px;
+    h5 {
+      color: #444;
+    }
   }
   div.text {
+    padding: 0 10px 10px 10px;
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 7; /* number of lines to show */
+      -webkit-box-orient: vertical;
+    }
   }
+}
+.dishCard:hover {
+  cursor: pointer;
 }

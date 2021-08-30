@@ -9,9 +9,10 @@ const Card = (props) => {
 
       <div className="dishTitle">
         <h1>{props.dish.strMeal}</h1>
+        <h5>#{props.dish.strCategory}</h5>
       </div>
       <div className="text">
-        <p></p>
+        <p>{props.dish.strInstructions}</p>
       </div>
     </div>
   );
