@@ -16,6 +16,7 @@ const dishDetail = (mealId) => {
   return (
     <div style={style}>
       <Dish mealId={mealId} />
+      {mealId}
     </div>
   );
 };
