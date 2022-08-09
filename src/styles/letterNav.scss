@@ -2,6 +2,11 @@ div.navigation {
   display: flex;
   justify-content: left;
   overflow-x: auto;
+	margin: 0 20px 0 20px;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: rgba(200, 200, 200, .8);
+	
 
   nav.AlphabetNav {
     margin-top: 1vh;
@@ -11,14 +16,15 @@ div.navigation {
       width: 50px;
       height: 50px;
       background: rgba(255, 255, 255, 0.5);
-      border: rgba(255, 255, 255, 0.7) 2px solid;
+      // border: rgba(255, 255, 255, 0.7) 2px solid;
+			border: none;
       border-radius: 20%;
       margin: 0.3rem;
       font-size: 20pt;
       transition: 0.2s;
     }
     button:hover {
-      border: rgba(255, 255, 255, 0.5) 2px solid;
+      // border: rgba(255, 255, 255, 0.5) 2px solid;
       background: rgba(255, 255, 255, 0.7);
     }
   }
